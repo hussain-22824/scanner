@@ -73,7 +73,6 @@ def analyze(symbol, df, allow_shorts, account, risk_pct):
     return {
         "Symbol": symbol.replace("=X", ""),
         "Type": "Forex" if "=X" in symbol else "Stock",
-        GOLD = ["GC=F"]  # gold futures, price per ounce in USD
         "Side": side,
         "Entry": round(price, dec),
         "Stop-Loss": round(stop, dec),
