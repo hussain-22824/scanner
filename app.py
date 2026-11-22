@@ -73,6 +73,7 @@ def analyze(symbol, df, allow_shorts, account, risk_pct):
     return {
         "Symbol": symbol.replace("=X", ""),
         "Type": "Forex" if "=X" in symbol else "Stock",
+        gold = st.checkbox("GOLD - XAU/USD", value=True)
         "Side": side,
         "Entry": round(price, dec),
         "Stop-Loss": round(stop, dec),
