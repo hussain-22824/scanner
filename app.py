@@ -1,4 +1,4 @@
-
+"""
 Market Scanner web app (works on phone and PC).
 Signals only, no trades are placed. Not financial advice.
 """
