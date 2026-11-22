@@ -1,4 +1,4 @@
-"""
+
 Market Scanner web app (works on phone and PC).
 Signals only, no trades are placed. Not financial advice.
 """
@@ -15,11 +15,10 @@ st.set_page_config(page_title="Market Scanner", page_icon="📈", layout="center
 
 FOREX = [
     "EURUSD=X", "GBPUSD=X", "USDJPY=X", "USDCHF=X", "AUDUSD=X",
-    "USDCAD=X", "NZDUSD=X", "EURGBP=X", "EURJPY=X", "GBPJPY=X",
+    "USDCAD=X", "NZDUSD=X", "EURGBP=X",
+     "EURJPY=X", "GBPJPY=X","GC=F", "SI=F", "CL=F",
 ]
 BATCH = 50
-
-
 @st.cache_data(ttl=86400)
 def get_sp500():
     url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
